@@ -13,11 +13,11 @@ app.use(
 );
 
 const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
-  port: 5433,
+  host: "dpg-cdnci182i3mqe2a5pfq0-a",
+  user: "zkristo",
+  port: 5432,
   password: "bazepodataka",
-  database: "postgres",
+  database: "web2database",
 });
 
 pool.connect();
