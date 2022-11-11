@@ -16,7 +16,7 @@ const pool = new Pool({
   host: "dpg-cdnci182i3mqe2a5pfq0-a",
   user: "zkristo",
   port: 5432,
-  password: "bazepodataka",
+  password: "h9hk0gaqb7ANeRnakkgoHx4jj1fgxaXV",
   database: "web2database",
 });
 
