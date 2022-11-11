@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form action="/auth" method="post">
+      <input type="text" placeholder="Enter user id" name="id"/>
+      <input type="checkbox" name="enable" <%= checked %>>
+      <label for="checkbox">Enable SQLIP</label>
+      <input type="submit" value="search" class="btn">
+      
+      <% if (data.keys !== undefined) { %>
+        <% data.forEach(user => { %>
+         <% for (const [key, val] of Object.entries(user)) { %>
+          <div class="list">
+            <%= key %>: <%= val %>
+          </div>
+         <% } %>
+        <% }) %>
+      <% } %>
+    </form>
+  </div>
+</div>
+</body>
+</html>
